@@ -20,3 +20,13 @@ exam_data = {'수학' : [ 90, 80, 70], '영어': [ 98, 89, 95],
 df = pd.DataFrame(exam_data, index=['서준','우현','인아'])
 
 print(df)
+
+# 데이터프레임을 복제 후 df2의 행 삭제
+df2 = df[:]
+#df2.drop('우현', inplace = True)
+#print(df2)
+
+# 데이터프레임 복제 후 df3의 2개의 행 삭제
+df3 = df[:]
+#df3.drop(['우현', '인아'], axis = 0, inplace = True)
+#print(df3)
